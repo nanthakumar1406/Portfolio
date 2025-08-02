@@ -429,3 +429,14 @@ footer {
 footer p {
   text-align: center;
 }
+
+/* TYPING EFFECT CARET */
+.section__text__p2 .text::after {
+  content: '|';
+  animation: blink 1s step-start infinite;
+}
+
+@keyframes blink {
+  0%, 100% { opacity: 0; }
+  50% { opacity: 1; }
+}
